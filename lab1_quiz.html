@@ -8,79 +8,117 @@
     <link rel="stylesheet" type="text/css" media="screen" href="lab1_quiz.css" />
     <script src="lab1_quiz.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+            .code{
+                padding-left: 30px;
+            }
+            .question{
+                font-weight: bold;
+            }
+    </style>
 </head>
+
 <body>
     <div class="container">
         <div>
             <h5>1) Question 1</h5>
-            <div> What is the following line of JavaScript doing?</div>
-            <div>document.body.innerHTML = &lt;h1&gt;"Hello World"&lt;/h1&gt;</div>
+            <div class="question">What is the following line of JavaScript doing?</div>
+            <div class="code">
+                <div>document.body.innerHTML = &lt;h1&gt;"Hello World"&lt;/h1&gt;</div>
+            </div>
+
 
         </div>
         <div>
-            <input type="radio"> a)
+            <input type="radio" name="Q1"> a) Writing "Hello World" to console
             <br>
-            <input type="radio"> b)
+            <input type="radio" name="Q1"> b) The code will generate an error
             <br>
-            <input type="radio"> c)
+            <input type="radio" name="Q1"> c) Adding the heading "Hello World" to the html body
             <br>
-            <input type="radio"> d)
+            <input type="radio" name="Q1"> d) Adding the title "Hello World" 
         </div>
         <br>
         <div>
             <h5>2) Question 2</h5>
-            <div> What is JavaScript Render Blocking?</div>
+            <div class="question"> What is the output of the following snippet of code?</div>
+            <div class="code">
+                <div>var array = ["hello", false, 23, "world"]</div>
+                <div>console.log(array)</div>
+            </div>
+
         </div>
         <div>
-            <input type="radio"> a)
+            <input type="radio" name="Q2"> a) Nothing, it is missing semi-colons
             <br>
-            <input type="radio"> b)
+            <input type="radio" name="Q2"> b) Nothing, array mixes different types
             <br>
-            <input type="radio"> c)
+            <input type="radio" name="Q2"> c) ["hello", false, 23, "world"]
             <br>
-            <input type="radio"> d)
+            <input type="radio" name="Q2"> d) ["hello", "world"]
         </div>
         <br>
         <div>
             <h5>3) Question 3</h5>
-            <div> What is the following line of JavaScript doing?</div>
+            <div class="question">What is the following conditional statement as a ternary operator?
+            </div>
+            <div class="code">
+                    <div>if (a &lt; b){</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;console.log("true");</div>
+                    <div>} else {</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;console.log("false");</div>
+                    <div>}</div>
+                </div>
         </div>
         <div>
-            <input type="radio"> a)
+            <input type="radio" name="Q3"> a) a > b ? console.log("false") : console.log("true");
             <br>
-            <input type="radio"> b)
+            <input type="radio" name="Q3"> b) a &lt; b ? console.log("true") : console.log("false");
             <br>
-            <input type="radio"> c)
+            <input type="radio" name="Q3"> c) a &lt; b ? console.log("false") : console.log("true");
             <br>
-            <input type="radio"> d)
+            <input type="radio" name="Q3"> d) a &lt; b ? console.log("true"); : console.log("false");
         </div>
         <br>
         <div>
             <h5>4) Question 4</h5>
-            <div> What is the following line of JavaScript doing?</div>
+            <div class="question"> What is the output of the follow code snippet?</div>
+            <div class="code">
+                <div>var hello = function(){</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;return "world";</div>
+                <div>}</div>
+                <br>
+                <div>var hello2 = hello();</div>
+                <div>console.log(hello2);</div>
+            </div>
         </div>
         <div>
-            <input type="radio"> a)
+            <input type="radio" name="Q4"> a) hello2
             <br>
-            <input type="radio"> b)
+            <input type="radio" name="Q4"> b) hello
             <br>
-            <input type="radio"> c)
+            <input type="radio" name="Q4"> c) world
             <br>
-            <input type="radio"> d)
+            <input type="radio" name="Q4"> d) There will be an error
         </div>
         <br>
         <div>
             <h5>5) Question 5</h5>
-            <div> What is the following line of JavaScript doing?</div>
+            <div class="question">What will happen if you run the following snippet of code?</div>
+            <div class="code">
+                <div>const hello = "Hello World";</div>
+                <div>hello = "world";</div>
+                <div>console.log(hello);</div>
+            </div>
         </div>
         <div>
-            <input type="radio"> a)
+            <input type="radio" name="Q5"> a) Hello World will appear on the console
             <br>
-            <input type="radio"> b)
+            <input type="radio" name="Q5"> b) world will appear on the console
             <br>
-            <input type="radio"> c)
+            <input type="radio" name="Q5"> c) Nothing will appear on the console
             <br>
-            <input type="radio"> d)
+            <input type="radio" name="Q5"> d) An error will appear on the console for trying to change a constant
         </div>
         <br>
     </div>
