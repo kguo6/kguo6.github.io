@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Lab1 Quiz</title>
+    <title>Lab2 Quiz Questions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="quizQuestions.css" />
     <script defer src="quizQuestions.js"></script>
@@ -12,12 +12,12 @@
 
 <body>
     <div class="container" id = content>
-        <!-- <div class="questions">
+        <div class="questions">
             <div class="display">
                 <h5>1) Question 1</h5>
                 <div class="question">What is the following line of JavaScript doing?</div>
                 <div class="code">
-                    <div>document.body.innerHTML = &lt;h1&gt;"Hello World"&lt;/h1&gt;</div>
+                    <div><span class="bluecode">document.body.innerHTML</span> = &lt;h1&gt;<span class="yellowcode">"Hello World"</span>&lt;/h1&gt;</div>
                 </div>
             </div>
             <div class="answer">
@@ -36,8 +36,8 @@
                 <h5>2) Question 2</h5>
                 <div class="question"> What is the output of the following snippet of code?</div>
                 <div class="code">
-                    <div>var array = ["hello", false, 23, "world"]</div>
-                    <div>console.log(array)</div>
+                    <div><span class="bluecode">var</span> array = [<span class="yellowcode">"hello"</span>, <span class="redcode">false</span>, <span class="bluecode">23</span>, <span class="yellowcode">"world"</span>]</div>
+                    <div><span class="bluecode">console</span>.log(array)</div>
                 </div>
     
             </div>
@@ -60,10 +60,10 @@
                 <div class="question">What is the following conditional statement as a ternary operator?
                 </div>
                 <div class="code">
-                        <div>if (a &lt; b){</div>
-                        <div>&nbsp;&nbsp;&nbsp;&nbsp;console.log("true");</div>
+                        <div><span class="bluecode">if</span> (a &lt; b){</div>
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="bluecode">console</span>.log(<span class="yellowcode">"true"</span>);</div>
                         <div>} else {</div>
-                        <div>&nbsp;&nbsp;&nbsp;&nbsp;console.log("false");</div>
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="bluecode">console</span>.log(<span class="yellowcode">"false"</span>);</div>
                         <div>}</div>
                     </div>
             </div>
@@ -85,12 +85,12 @@
                 <h5>4) Question 4</h5>
                 <div class="question"> What is the output of the follow code snippet?</div>
                 <div class="code">
-                    <div>var hello = function(){</div>
-                    <div>&nbsp;&nbsp;&nbsp;&nbsp;return "world";</div>
+                    <div><span class="bluecode">var</span> hello = function(){</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="yellowcode">return</span> "world";</div>
                     <div>}</div>
                     <br>
-                    <div>var hello2 = hello();</div>
-                    <div>console.log(hello2);</div>
+                    <div><span class="bluecode">var</span> hello2 = hello();</div>
+                    <div><span class="bluecode">console</span>.log(hello2);</div>
                 </div>
             </div>
             <div class="answer">
@@ -111,9 +111,9 @@
                 <h5>5) Question 5</h5>
                 <div class="question">What will happen if you run the following snippet of code?</div>
                 <div class="code">
-                    <div>const hello = "Hello World";</div>
+                    <div><span class="yellowcode">const</span> hello = "Hello World";</div>
                     <div>hello = "world";</div>
-                    <div>console.log(hello);</div>
+                    <div><span class="bluecode">console</span>.log(hello);</div>
                 </div>
             </div>
             <div class="answer">
@@ -126,10 +126,7 @@
                 <input type="radio" name="Q5"> d) An error will appear on the console for trying to change a constant
             </div>
             <br>
-        </div> -->
-    </div>
-
-       
-    
+        </div>
+    </div>   
 </body>
 </html>
